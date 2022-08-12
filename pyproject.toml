@@ -1,12 +1,14 @@
 [tool.poetry]
-name = "python_repository_simple"
+name = "fastapi_sample"
 version = "0.0.0"
-description = "python_repository_simple"
+description = "fastapi_sample"
 authors = ["yamap55"]
 license = "Creative Commons CC0 1.0 Universal (CC0 1.0) Public Domain Dedication"
 
 [tool.poetry.dependencies]
 python = "^3.7"
+fastapi = "0.79.0"
+uvicorn = "0.18.2"
 
 [tool.poetry.dev-dependencies]
 # lint
