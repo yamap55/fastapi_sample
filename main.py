@@ -1,9 +1,12 @@
 """main"""
 from logging import config
 
-from hoge.huga import Huga
+from fastapi import FastAPI
 
 config.fileConfig("logging.conf", disable_existing_loggers=False)
+app = FastAPI()
 
-if __name__ == "__main__":
-    Huga().piyo()
+@app.get("/")
+def main():
+    print("Hello World!")
+    return {"Hello": "World!"}

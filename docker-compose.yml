@@ -12,3 +12,5 @@ services:
     image: fastapi_sample-image
     container_name: fastapi_sample-container
     tty: true
+    ports:
+      - "8080:8080"
